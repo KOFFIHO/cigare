@@ -16,7 +16,10 @@ class Produit(models.Model):
     imageProduit2= models.ImageField(upload_to='img2' ,blank=True,null=True)
     imageProduit3= models.ImageField(upload_to='img3' ,blank=True,null=True)
     numero = models.CharField(max_length=10)
+    date_ajout = models.DateTimeField(auto_now_add=True)
     
+    class Meta:
+        ordering = ['-date_ajout']  # L'ordre est inversé ici
     # def __str__(self) :
     # 		return "{self.type_de_produit}"
     
