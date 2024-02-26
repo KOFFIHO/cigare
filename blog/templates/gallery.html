@@ -157,7 +157,7 @@
                             <img src="{{produit.imageProduit1.url}}" class="img-fluid" alt="Image" style='width:300px; height:300px'>
                             <div class="mask-icon">
                                 <ul>
-                                    <li><a data-toggle="tooltip" data-placement="right" title="Rafraîchir" style='weight:bolder; color:red'>Prix:{{produit.prix}}</a></li>                                    
+                                    <li><a data-toggle="tooltip" data-placement="right" title="Rafraîchir" style='font-size:15px; font-weight:bold; color:rgb(255, 255, 255)'>{{produit.prix}} FCFA</a></li>                                    
                                     <li><a href="{% url 'detail_produit' produit.id %}" data-toggle="tooltip" data-placement="right" title="Voir"><i class="fas fa-eye"></i></a></li>
                                     <li><a href="{% url 'index' %}" data-toggle="tooltip" data-placement="right" title="Rafraîchir"><i class="fas fa-sync-alt"></i></a></li>
                                     {% comment %} <li><a href="{% url 'detail_produit' produit.id %}" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li> {% endcomment %}
